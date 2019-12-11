@@ -25,3 +25,11 @@ src_exten = '777'
 wget http://10.0.0.1:8001/?dest_exten=0606060606&dest_context=default&src_exten=777&src_context=xivo-callme
 wget http://10.0.0.1:8001/?dest_exten=0606060606
 ```
+# uninstall
+```
+systemctl stop flask-originate.service
+systemctl disable flask-originate.service
+rm /lib/systemd/system/flask-originate.service
+systemctl daemon-reload
+rm -Rf /usr/local/bin/flask-originate
+```
