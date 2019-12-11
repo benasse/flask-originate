@@ -1,0 +1,10 @@
+[Unit]
+Description=originate asterisk call throught http
+After=network-online.target asterisk.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /usr/local/bin/flask-originate/app.py
+
+[Install]
+WantedBy=multi-user.target
