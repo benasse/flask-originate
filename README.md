@@ -1,6 +1,9 @@
 # flask-originate
 originate asterisk call throught http
 
+# Status
+This project is discontinued use [potoo](https://github.com/benasse/potoo) instead
+
 # install
 ```
 git clone https://github.com/benasse/flask-originate.git
